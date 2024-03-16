@@ -32,7 +32,7 @@ const Home = ({content}) => {
       </div>
       <div>
         <img
-          src={me}  
+          src={content?.fields.landing_image}
           alt="my profile"
           className="rounded-2xl mx-auto w-2/3 md:w-full"
         />
