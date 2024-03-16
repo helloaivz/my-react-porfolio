@@ -1,7 +1,7 @@
 import React from 'react';
 import code from '../assets/code2.png';
 
-const Works = () => {
+const Works = ({content}) => {
   return (
     <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
