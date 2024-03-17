@@ -9,12 +9,13 @@ const Education = ({content}) => {
               <p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center '>Education</p>
               <p className='py-4 text-2xl'>{content?.fields.schools_header}</p>
           </div> 
-          <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+          <div className='w-full grid grid-cols-2 sm:grid-cols-2 gap-2 text-center py-8'>
           {content?.fields.schools.map((school, index) => {
               return (
-                <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500" key={index}>
-                    <h4 className="my-4">{school.name}</h4>
-                  <p className="my-4">{school.program}</p>
+                <div className="py-6 rounded-md bg-cyan-800 flex flex-col justify-center items-center" key={index}>
+                <h3 className="my-2 font-bold">{school.school_name}</h3>
+                  <p>{school.program}</p>
+                  <p>{school.date_from} - {school.date_to}</p>
                 </div>
               );
             })}

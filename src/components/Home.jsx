@@ -30,12 +30,8 @@ const Home = ({content}) => {
           </Link>
         </div>
       </div>
-      <div>
-        <img
-          src={content?.fields.landing_image}
-          alt="my profile"
-          className="rounded-2xl mx-auto w-2/3 md:w-full"
-        />
+      <div className="rounded-2xl mx-auto w-2/3 md:w-full">
+      <iframe src="https://giphy.com/embed/paTz7UZbPfTZFRYnnB" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
       </div>
     </div>
   </div>

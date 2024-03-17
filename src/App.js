@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Works from './components/Works';
+import Footer from './components/Footer';
 
 import {React, useEffect, useState} from "react";
 import axios from "axios";
@@ -33,6 +34,7 @@ function App() {
       <Education content={data[3]}/>
       <Works content={data[4]}/>
       <Contact />
+      <Footer />
     </div>
   );
 }
