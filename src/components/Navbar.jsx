@@ -1,8 +1,9 @@
 import React, { useState } from 'react'; 
 
 import { Link } from 'react-scroll';
+import { SocialIcon } from 'react-social-icons';
 
-const Navbar = ({content}) => {
+const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
@@ -12,7 +13,7 @@ const Navbar = ({content}) => {
         <h1 className=' font-thin text-2xl italic font-serif'>AB</h1>
       </div>
       {/* menu */}
-      <ul className='hidden md:flex gap-x-8'>
+      <ul className='hidden sm:flex md:gap-x-8 gap-x-8 sm:gap-x-2'>
         <li>
           <Link to='home' smooth={true} duration={500}>
             Home
@@ -92,26 +93,29 @@ const Navbar = ({content}) => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://www.linkedin.com/in/aivie-baranao'
             >
               Linkedin 
             </a>
+            <SocialIcon network="linkedin" href="https://www.linkedin.com/in/aivie-baranao" />
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://github.com/helloaivz/'
             >
               Github 
             </a>
+            <SocialIcon network="github" href="www.github.com/helloaivz/" />
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='mailto:aivz.villanueva@gmail.com'
             >
               Email 
             </a>
+            <SocialIcon network="email" href="www.github.com/helloaivz/" />
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
             <a
@@ -120,6 +124,7 @@ const Navbar = ({content}) => {
             >
               Resume
             </a>
+            <SocialIcon network="defualt" href="www.github.com/helloaivz/" />
           </li>
         </ul>
       </div>
