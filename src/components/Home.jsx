@@ -27,7 +27,7 @@ const Home = ({content}) => {
         </div>
       </div>
       <div className="rounded-2xl mx-auto md:w-2/3 border-none ">
-      <iframe src="https://giphy.com/embed/paTz7UZbPfTZFRYnnB" width="480" height="450" frameBorder="0" class="giphy-embed" allowFullScreen="no"></iframe>
+      <iframe src="https://giphy.com/embed/paTz7UZbPfTZFRYnnB" width="420" height="450" frameBorder="0" class="giphy-embed" allowFullScreen="No"></iframe>
       </div>
     </div>
   </div>
