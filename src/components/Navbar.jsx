@@ -13,7 +13,7 @@ const Navbar = () => {
         <h1 className=' font-thin text-2xl italic font-serif'>AB</h1>
       </div>
       {/* menu */}
-      <ul className='hidden sm:flex md:gap-x-8 gap-x-8 sm:gap-x-2'>
+      <ul className='hidden sm:flex md:gap-x-8 gap-x-8 gap-x-2'>
         <li>
           <Link to='home' smooth={true} duration={500}>
             Home
